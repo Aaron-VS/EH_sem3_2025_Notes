@@ -18,7 +18,7 @@ The website `testphp.vulnweb.com`, a known intentionally vulnerable site used fo
 The open-source network scanner `nmap` (Network Mapper) was used due to its versatility and reliability for port scanning tasks.
 
 ### 3. Full TCP Port Scan  
-A TCP SYN scan (`-sS`) was performed on all 65,535 TCP ports using the `-p-` flag:
+A TCP SYN scan (`-sS`) was performed on all 65,535 TCP ports using the `-p-` command:
 
 ```bash
 nmap -p- testphp.vulnweb.com -oN full_port_scan.txt
@@ -41,7 +41,7 @@ nmap -p- testphp.vulnweb.com -oN full_port_scan.txt
 
 ##  Analysis
 
-- Only **port 80** was open — used for the website’s HTTP service.
+- Only **port 80** was open which is used for the website’s HTTP service.
 - No unexpected or hidden services were found.
 - A large number of filtered ports suggests a firewall is actively blocking access to unnecessary services.
 
