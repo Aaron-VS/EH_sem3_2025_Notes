@@ -7,7 +7,7 @@
 ```bash
 nmap -p- testphp.vulnweb.com -oN full_port_scan.txt
 ```
-## 🧪 Methodology
+##  Methodology
 
 To identify all potentially open ports on the target system, a comprehensive full port scan was conducted using the `nmap` tool. The process followed these steps:
 
@@ -25,7 +25,7 @@ nmap -p- testphp.vulnweb.com -oN full_port_scan.txt
 
 ```
 
-## ✅ Findings 
+##  Findings 
 <br>
 <img width="783" height="569" alt="image" src="https://github.com/user-attachments/assets/c6897a25-38c1-4f16-ab3b-5367c615c097" /><br>
 ##
@@ -39,7 +39,7 @@ nmap -p- testphp.vulnweb.com -oN full_port_scan.txt
 
 ---
 
-## 🔍 Analysis
+##  Analysis
 
 - Only **port 80** was open — used for the website’s HTTP service.
 - No unexpected or hidden services were found.
@@ -47,7 +47,7 @@ nmap -p- testphp.vulnweb.com -oN full_port_scan.txt
 
 ---
 
-## 🔐 Importance of Full Port Scans
+##  Importance of Full Port Scans
 
 While basic scans often check only the top 1000 common ports, **full port scans** are vital in penetration testing and security audits because:
 - Some services might be intentionally or accidentally running on uncommon ports
@@ -56,7 +56,7 @@ While basic scans often check only the top 1000 common ports, **full port scans*
 
 ---
 
-## 🧪 Shell Script
+##  Shell Script
 
 ### `full_port_scan.sh`
 ```bash
@@ -73,8 +73,8 @@ echo "[*] Scan complete. Results saved to $OUTPUT_FILE"
 
 ---
 
-## 📁 Submission Checklist
+##  Submission Checklist
 
-- ✅ `full_port_scan.sh` — shell script to automate the scan
-- ✅ `full_port_scan.txt` — saved Nmap output
-- ✅ `full_port_scan_report.md` — this report
+-  `full_port_scan.sh` — shell script to automate the scan
+-  `full_port_scan.txt` — saved Nmap output
+-  `full_port_scan_report.md` — this report
